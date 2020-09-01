@@ -1,7 +1,155 @@
 /* common */
-
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1;
+}
+div {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
 /* ----->header */
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 90px;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.l-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  width: 88%;
+  max-width: 1180px;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header-logo {
+  display: inline-block;
+  letter-spacing: 10px;
+  font-family: "Georgia";
+  width: 145px;
+}
+.header-logo a {
+  width: 145px;
+  height: 90px;
+}
+.header-logo img {
+  width: 145px;
+}
+.p-global-nav {
+  line-height: 90px;
+  height: 100%;
+  font-size: 14px;
+}
+.p-global-nav ul {
+  margin: 0;
+  padding: 0;
+}
 
+.p-menu-btn {
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  line-height: 60px;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+.hamburger {
+  color: white;
+  float: right;
+  font-size: 18px;
+  text-align: center;
+}
+
+.header-list {
+  float: right;
+}
+
+.header-list li {
+  display: inline-block;
+  transition: all 0.5s;
+}
+.header-list a {
+  display: inline;
+  font-size: 14px;
+  transition: 0.2s;
+  padding: 0 21px;
+  color: white;
+}
+.header-list a:hover {
+  text-decoration: none;
+  color: rgba(78, 75, 75, 1);
+}
+
+.concept-list {
+  width: 220px;
+  display: none;
+  position: absolute;
+  top: -1000px;
+  background-color: black;
+  border-radius: 0;
+}
+.concept-list li {
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  background-color: black;
+}
+.concept:hover ul {
+  display: block;
+}
+.concept:hover ul li {
+  height: auto;
+  overflow: visible;
+  transition: overflow 0.5s ease-in;
+}
+.concept-list a {
+  position: relative;
+  width: 220px;
+  height: auto;
+  padding: 17px 18px;
+  font-size: 14px;
+  line-height: 16.5px;
+  display: block;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+.concept-list a:hover {
+  background-color: #442602;
+  color: white;
+}
+.dropdown-menu {
+  background-color: black;
+  border-radius: 0;
+}
 /* <-----header */
 
 /* ----->main */
