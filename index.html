@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap CSS -->
     <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-    crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    
     <title>課題</title>
   </head>
   <body>
     <header>
-      <div class="l-header">
+      <div class="l-header dropdown">
         <div class="header-logo">
           <a href="#" class="header-logo-link">
             <img
@@ -25,35 +24,72 @@
             />
           </a>
         </div>
-        <button class="p-menu-btn"><span class="hamburger fa fa-bars"
-          >
-        </span></button>
+        <nav>
+          <button class="headermenu-btn dropdown-toggle" id="header-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
+        </nav>
         <div class="header-list">
           <nav class="p-global-nav">
-            <ul>
-              <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+            <ul class="header-menu" id="header-menu">
+              <li class="nav-item">
+                <a href="#" class="nav-link">HOME</a>
+              </li>
               <li class="concept nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle">CONCEPT</a>
-                <ul class="concept-list dropdown-menu">
-                  <li class="nav-subitem"><a href="#" class="nav-link">ブログアーカイブ</a></li>
-                  <li class="nav-subitem"><a href="#" class="nav-link">お知らせアーカイブ</a></li>
-                  <li class="nav-subitem"><a href="#" class="nav-link">イベントアーカイブ</a></li>
-                  <li class="nav-subitem"><a href="#" class="nav-link">インタビューアーカイブ</a></li>
-                  <li class="nav-subitem"><a href="#" class="nav-link">FAQページ</a></li>
-                  <li class="nav-subitem"><a href="#" class="nav-link">固定ページ（デフォルト）</a></li>
-                  <li class="nav-subitem"><a href="#" class="nav-link">CONCEPT</a></li>
-                  <li class="nav-subitem"><a href="#" class="nav-link">SERVICE</a></li>
-                  <li class="nav-subitem"><a href="#" class="nav-link">FLOOR</a></li>
-                  <li class="nav-subitem"><a href="#" class="nav-link">ACCESS</a></li>
+                <a href="#" class="nav-link">CONCEPT </a>
+                <span
+                  ><button class="dropdown-menu-btn" id="concept-btn"></button
+                ></span>
+                <ul class="concept-list dropdown-menu" id="concept-list">
+                  <li class="nav-subitem dropdown-item">
+                    <a href="#" class="nav-link">ブログアーカイブ</a>
+                  </li>
+                  <li class="nav-subitem dropdown-item">
+                    <a href="#" class="nav-link">お知らせアーカイブ</a>
+                  </li>
+                  <li class="nav-subitem dropdown-item">
+                    <a href="#" class="nav-link">イベントアーカイブ</a>
+                  </li>
+                  <li class="nav-subitem dropdown-item">
+                    <a href="#" class="nav-link">インタビューアーカイブ</a>
+                  </li>
+                  <li class="nav-subitem dropdown-item">
+                    <a href="#" class="nav-link">FAQページ</a>
+                  </li>
+                  <li class="nav-subitem dropdown-item">
+                    <a href="#" class="nav-link">固定ページ（デフォルト）</a>
+                  </li>
+                  <li class="nav-subitem dropdown-item">
+                    <a href="#" class="nav-link">CONCEPT</a>
+                  </li>
+                  <li class="nav-subitem dropdown-item">
+                    <a href="#" class="nav-link">SERVICE</a>
+                  </li>
+                  <li class="nav-subitem dropdown-item">
+                    <a href="#" class="nav-link">FLOOR</a>
+                  </li>
+                  <li class="nav-subitem dropdown-item">
+                    <a href="#" class="nav-link">ACCESS</a>
+                  </li>
                 </ul>
               </li>
-              <li class="nav-item"><a href="#" class="nav-link">SERVICE</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">FLOOR</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">SERVICE</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">FLOOR</a>
+              </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">INTERVIEW</a>
               </li>
-              <li class="nav-item"><a href="#" class="nav-link">BLOG</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">ACCESS</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">ACCESS</a>
+              </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">DOWNLOAD</a>
               </li>
@@ -65,8 +101,36 @@
     <main></main>
     <footer></footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      "use strict";
+      {
+        const headerBtn = document.getElementById("header-btn");
+        const headerMenu = document.getElementById("header-menu");
+        headerBtn.addEventListener("click", () => {
+          headerMenu.classList.toggle("header-menu");
+        });
+
+        const conceptBtn = document.getElementById("concept-btn");
+        const conceptList = document.getElementById("concept-list");
+        conceptBtn.addEventListener("click", () => {
+          conceptList.classList.toggle("open");
+        });
+      }
+    </script>
   </body>
 </html>
