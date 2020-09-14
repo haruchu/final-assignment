@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <div class="l-header dropdown">
+      <div class="l-header">
         <div class="header-logo">
           <a href="#" class="header-logo-link">
             <img
@@ -24,8 +24,16 @@
             />
           </a>
         </div>
-        <nav>
-          <a class="headermenu-btn " id="header-btn">
+        <nav class="navbar">
+          <a
+            class="headermenu-btn navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#header-dropdown"
+            aria-controls="header-dropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <div></div>
             <div></div>
             <div></div>
@@ -33,16 +41,26 @@
         </nav>
         <div class="header-list">
           <nav class="p-global-nav">
-            <ul class="header-menu" id="header-menu">
-              <li class="nav-item">
+            <ul class="header-menu collapse" id="header-dropdown">
+              <li class="nav-item dropdown-item">
                 <a href="#" class="nav-link">HOME</a>
               </li>
-              <li class="concept nav-item dropdown">
+              <li class="concept nav-item dropdown-item">
                 <a href="#" class="nav-link">CONCEPT </a>
-                <span
-                  ><button class="dropdown-menu-btn" id="concept-btn"></button
-                ></span>
-                <ul class="concept-list dropdown-menu" id="concept-list">
+                <nav class="navbar">
+                  <span
+                    ><button
+                      class="dropdown-menu-btn navbar-toggler"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#concept-dropdown"
+                      aria-controls="concept-dropdown"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    ></button
+                  ></span>
+                </nav>
+                <ul class="concept-list collapse" id="concept-dropdown">
                   <li class="nav-subitem dropdown-item">
                     <a href="#" class="nav-link">ブログアーカイブ</a>
                   </li>
@@ -75,22 +93,22 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
+              <li class="nav-item dropdown-item">
                 <a href="#" class="nav-link">SERVICE</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item dropdown-item">
                 <a href="#" class="nav-link">FLOOR</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item dropdown-item">
                 <a href="#" class="nav-link">INTERVIEW</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item dropdown-item">
                 <a href="#" class="nav-link">BLOG</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item dropdown-item">
                 <a href="#" class="nav-link">ACCESS</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item dropdown-item">
                 <a href="#" class="nav-link">DOWNLOAD</a>
               </li>
             </ul>
@@ -116,21 +134,5 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    <script>
-      "use strict";
-      {
-        const headerBtn = document.getElementById("header-btn");
-        const headerMenu = document.getElementById("header-menu");
-        headerBtn.addEventListener("click", () => {
-          headerMenu.classList.toggle("header-menu");
-        });
-
-        const conceptBtn = document.getElementById("concept-btn");
-        const conceptList = document.getElementById("concept-list");
-        conceptBtn.addEventListener("click", () => {
-          conceptList.classList.toggle("open");
-        });
-      }
-    </script>
   </body>
 </html>

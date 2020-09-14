@@ -23,10 +23,6 @@ li {
   list-style: none;
 }
 
-.open {
-  display: block;
-}
-
 /* ----->header */
 
 header ul {
@@ -58,8 +54,6 @@ header {
 
 .header-logo {
   display: inline-block;
-  letter-spacing: 10px;
-  font-family: "Georgia";
   width: 145px;
 }
 
@@ -74,8 +68,11 @@ header {
 
 .p-global-nav {
   line-height: 90px;
-  height: 100%;
   font-size: 14px;
+}
+
+.navbar {
+  padding: 0;
 }
 
 .headermenu-btn {
@@ -89,16 +86,21 @@ header {
 }
 
 .header-list li {
-  display: inline-block;
   transition: all 0.5s;
 }
 
+.nav-item {
+  height: 100%;
+  width: 100%;
+}
+
 .header-list a {
-  display: inline;
+  display: block;
   font-size: 14px;
   transition: 0.2s;
   padding: 0 21px;
   color: #fff;
+  height: 100%;
 }
 
 .dropdown-menu-btn {
@@ -115,13 +117,7 @@ header {
   height: auto;
   display: block;
   text-align: center;
-  overflow: hidden;
   background-color: #000;
-}
-
-.dropdown-menu {
-  padding: 0;
-  border: 0;
 }
 
 .concept-list a {
@@ -157,13 +153,28 @@ header {
 /* <-----footer */
 
 @media (min-width: 1200px) {
-  .header-list a:hover {
+  #header-dropdown {
+    display: flex;
+  }
+
+  .dropdown-item:hover {
+    background-color: transparent;
+  }
+
+  .dropdown-item a:hover {
+    color: #999999;
     text-decoration: none;
-    color: rgba(78, 75, 75, 1);
+  }
+
+  .concept {
+    position: relative;
   }
 
   .concept-list {
-    margin-top: -1px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
   }
 
   .concept-list a:hover {
@@ -175,6 +186,7 @@ header {
     display: block;
   }
 }
+
 @media (max-width: 1200px) {
   header {
     background-color: #000;
@@ -204,6 +216,10 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .header-list li {
+    display: block;
   }
 
   .headermenu-btn > div {
@@ -253,6 +269,10 @@ header {
     height: auto;
   }
 
+  .dropdown-item:hover {
+    background-color: #000000;
+  }
+
   .header-list a {
     height: 50px;
     padding: 0 5.55556%;
@@ -261,10 +281,6 @@ header {
     font-size: 12px;
     font-weight: 100;
     background-color: #000;
-  }
-
-  .header-menu {
-    display: none;
   }
 
   .nav-item {
@@ -277,6 +293,16 @@ header {
     display: block;
     width: 100%;
     height: 50px;
+  }
+
+  .concept {
+    position: relative;
+  }
+
+  .concept > .navbar {
+    position: absolute;
+    top: 0;
+    right: 5px;
   }
 
   .dropdown-menu-btn {
@@ -318,26 +344,9 @@ header {
   header {
     position: static;
   }
-
-  .l-inner {
-    width: 88.88889%;
-  }
 }
 
 @media (max-width: 767px) {
-  .l-inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  .p-cb {
-    padding-top: 0;
-  }
-
-  .p-cb-item {
-    margin-bottom: 40px;
-  }
-
   .header-logo img {
     width: 110px;
     height: auto;
