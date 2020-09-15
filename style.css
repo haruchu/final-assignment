@@ -48,8 +48,7 @@ header {
   width: 88%;
   max-width: 1180px;
   justify-content: space-between;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto 0 auto;
 }
 
 .header-logo {
@@ -85,10 +84,6 @@ header {
   padding: 0;
 }
 
-.header-list li {
-  transition: all 0.5s;
-}
-
 .nav-item {
   height: 100%;
   width: 100%;
@@ -114,16 +109,13 @@ header {
 
 .concept-list li {
   width: 100%;
-  height: auto;
   display: block;
   text-align: center;
   background-color: #000;
 }
 
 .concept-list a {
-  position: relative;
   width: 220px;
-  height: auto;
   padding: 17px 18px;
   font-size: 14px;
   line-height: 16px;
@@ -187,7 +179,7 @@ header {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   header {
     background-color: #000;
     height: 60px;
@@ -198,7 +190,7 @@ header {
   .l-header {
     height: 100%;
     width: 100%;
-    padding-left: 5.55556%;
+    padding-left: 50px;
     margin-right: 0;
     margin-left: 0;
   }
@@ -222,7 +214,7 @@ header {
     display: block;
   }
 
-  .headermenu-btn > div {
+  .headermenu-btn div {
     height: 3px;
     width: 16px;
     margin: 1px;
@@ -260,13 +252,8 @@ header {
     top: 60px;
     left: 0;
     width: 100%;
-    height: auto;
     margin: 0;
     border: none;
-  }
-
-  .header-list li {
-    height: auto;
   }
 
   .dropdown-item:hover {
@@ -275,7 +262,7 @@ header {
 
   .header-list a {
     height: 50px;
-    padding: 0 5.55556%;
+    padding: 0 50px;
     display: inline-block;
     vertical-align: middle;
     font-size: 12px;
@@ -321,7 +308,7 @@ header {
 
   .concept-list {
     width: 100%;
-    padding-left: 1em;
+    padding-left: 14px;
     position: static;
   }
 
@@ -334,7 +321,7 @@ header {
   .concept-list a {
     width: 100%;
     line-height: 50px;
-    padding: 0 5.55556%;
+    padding: 0 50px;
     float: left;
   }
 }
@@ -347,9 +334,17 @@ header {
 }
 
 @media (max-width: 767px) {
+  .l-header {
+    padding-left: 20px;
+  }
   .header-logo img {
     width: 110px;
-    height: auto;
+  }
+  .header-list a {
+    padding: 0 20px;
+  }
+  .concept-list a {
+    padding: 0 20px;
   }
 }
 
