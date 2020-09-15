@@ -8,7 +8,6 @@ body {
   margin: 0;
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  line-height: 1;
 }
 
 div {
@@ -48,17 +47,12 @@ header {
   width: 88%;
   max-width: 1180px;
   justify-content: space-between;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 
 .header-logo {
   display: inline-block;
   width: 145px;
-}
-
-.header-logo a {
-  width: 145px;
-  height: 90px;
 }
 
 .header-logo img {
@@ -133,7 +127,6 @@ header {
 .dropdown-item {
   padding: 0;
 }
-
 /* <-----header */
 
 /* ----->main */
@@ -154,7 +147,7 @@ header {
   }
 
   .dropdown-item a:hover {
-    color: #999999;
+    color: #999;
     text-decoration: none;
   }
 
@@ -200,7 +193,6 @@ header {
     float: right;
     height: 60px;
     width: 60px;
-    box-sizing: border-box;
     background-color: #000;
     border: none;
     padding: 6px 10px;
@@ -214,26 +206,26 @@ header {
     display: block;
   }
 
+  .headermenu-btn {
+    position: relative;
+  }
+
   .headermenu-btn div {
     height: 3px;
     width: 16px;
     margin: 1px;
     background-color: #fff;
     border-radius: 1px;
-    display: inline-block;
-    box-sizing: border-box;
+    /* position: absolute; */
+
   }
 
   .headermenu-btn　div:nth-of-type(1) {
-    top: 6px;
-  }
-
-  .headermenu-btn　div:nth-of-type(2) {
-    top: 16px;
+    top: 20px;
   }
 
   .headermenu-btn div:nth-of-type(3) {
-    bottom: 6px;
+    bottom: 20px;
   }
 
   .p-global-nav {
@@ -241,7 +233,7 @@ header {
   }
 
   .p-global-nav ul {
-    background-color: #000000;
+    background-color: #000;
   }
 
   .header-list {
@@ -257,7 +249,7 @@ header {
   }
 
   .dropdown-item:hover {
-    background-color: #000000;
+    background-color: #000;
   }
 
   .header-list a {
@@ -286,7 +278,7 @@ header {
     position: relative;
   }
 
-  .concept > .navbar {
+  .concept-btn {
     position: absolute;
     top: 0;
     right: 5px;
@@ -346,8 +338,4 @@ header {
   .concept-list a {
     padding: 0 20px;
   }
-}
-
-/* スマホ */
-@media (max-width: 560px) {
 }
