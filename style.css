@@ -1,17 +1,9 @@
 /* common */
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-}
-
-div {
-  display: block;
 }
 
 a {
@@ -73,11 +65,6 @@ header {
   cursor: pointer;
 }
 
-.header-menu {
-  margin: 0;
-  padding: 0;
-}
-
 .nav-item {
   height: 100%;
   width: 100%;
@@ -97,7 +84,7 @@ header {
 }
 
 .concept-list {
-  background-color: #000000;
+  background-color: #000;
   border-radius: 0;
 }
 
@@ -127,6 +114,7 @@ header {
 .dropdown-item {
   padding: 0;
 }
+
 /* <-----header */
 
 /* ----->main */
@@ -188,8 +176,11 @@ header {
     margin-left: 0;
   }
 
-  .headermenu-btn {
+  .header-list li {
     display: block;
+  }
+
+  .headermenu-btn {
     float: right;
     height: 60px;
     width: 60px;
@@ -202,10 +193,6 @@ header {
     align-items: center;
   }
 
-  .header-list li {
-    display: block;
-  }
-
   .headermenu-btn {
     position: relative;
   }
@@ -216,8 +203,6 @@ header {
     margin: 1px;
     background-color: #fff;
     border-radius: 1px;
-    /* position: absolute; */
-
   }
 
   .headermenu-btn　div:nth-of-type(1) {
