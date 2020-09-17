@@ -61,7 +61,6 @@ header {
 }
 
 .headermenu-btn {
-  display: none;
   cursor: pointer;
 }
 
@@ -77,10 +76,6 @@ header {
   padding: 0 21px;
   color: #fff;
   height: 100%;
-}
-
-.dropdown-menu-btn {
-  display: none;
 }
 
 .concept-list {
