@@ -15,13 +15,13 @@
   </head>
   <body>
     <header>
-      <div class="l-header">
+      <nav class="navbar navbar-expand-xl l-header">
         <div class="header-logo">
           <a href="#" class="header-logo-link">
             <img src="./img/header-logo.png" />
           </a>
         </div>
-        <div class="navbar navbar-expand-xl" >
+        <div class="navbar navbar-expand-xl">
           <a
             class="headermenu-btn navbar-toggler"
             type="button"
@@ -36,80 +36,85 @@
             <div></div>
           </a>
         </div>
-        <div class="header-list p-global-nav">
-            <ul class="header-menu collapse" id="header-dropdown">
-              <li class="dropdown-item">
-                <a href="#" class="nav-link">HOME</a>
-              </li>
-              <li class="concept dropdown-item">
-                <a href="#" class="nav-link">CONCEPT </a>
-                <div class="navbar concept-btn navbar-expand-xl">
-                  <span
-                    ><button
-                      class="dropdown-menu-btn navbar-toggler"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#concept-dropdown"
-                      aria-controls="concept-dropdown"
-                      aria-expanded="false"
-                      aria-label="Toggle navigation"
-                    ></button
-                  ></span>
-                </div>
-                <ul class="concept-list collapse" id="concept-dropdown">
-                  <li class="dropdown-item">
-                    <a href="#" class="nav-link">ブログアーカイブ</a>
-                  </li>
-                  <li class="dropdown-item">
-                    <a href="#" class="nav-link">お知らせアーカイブ</a>
-                  </li>
-                  <li class="dropdown-item">
-                    <a href="#" class="nav-link">イベントアーカイブ</a>
-                  </li>
-                  <li class="dropdown-item">
-                    <a href="#" class="nav-link">インタビューアーカイブ</a>
-                  </li>
-                  <li class="dropdown-item">
-                    <a href="#" class="nav-link">FAQページ</a>
-                  </li>
-                  <li class="dropdown-item">
-                    <a href="#" class="nav-link">固定ページ（デフォルト）</a>
-                  </li>
-                  <li class="dropdown-item">
-                    <a href="#" class="nav-link">CONCEPT</a>
-                  </li>
-                  <li class="dropdown-item">
-                    <a href="#" class="nav-link">SERVICE</a>
-                  </li>
-                  <li class="dropdown-item">
-                    <a href="#" class="nav-link">FLOOR</a>
-                  </li>
-                  <li class="dropdown-item">
-                    <a href="#" class="nav-link">ACCESS</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown-item">
-                <a href="#" class="nav-link">SERVICE</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="#" class="nav-link">FLOOR</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="#" class="nav-link">INTERVIEW</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="#" class="nav-link">BLOG</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="#" class="nav-link">ACCESS</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="#" class="nav-link">DOWNLOAD</a>
-              </li>
-            </ul>
+        <div class="header-list">
+          <ul
+            class="navbar-nav collapse ml-lg-auto header-menu"
+            id="header-dropdown"
+          >
+            <li class="dropdown-item">
+              <a href="#" class="nav-link">HOME</a>
+            </li>
+            <li class="dropdown-item dropdown concept">
+              <a href="#" class="nav-link">CONCEPT </a>
+
+              <div class="navbar concept-btn navbar-expand-xl">
+                <span
+                  ><button
+                    class="dropdown-menu-btn navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#concept-dropdown"
+                    aria-controls="concept-dropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  ></button
+                ></span>
+              </div>
+
+              <ul class="concept-list collapse" id="concept-dropdown">
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">ブログアーカイブ</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">お知らせアーカイブ</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">イベントアーカイブ</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">インタビューアーカイブ</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">FAQページ</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">固定ページ（デフォルト）</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">CONCEPT</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">SERVICE</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">FLOOR</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">ACCESS</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown-item">
+              <a href="#" class="nav-link">SERVICE</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="#" class="nav-link">FLOOR</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="#" class="nav-link">INTERVIEW</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="#" class="nav-link">BLOG</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="#" class="nav-link">ACCESS</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="#" class="nav-link">DOWNLOAD</a>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </header>
     <main></main>
     <footer></footer>
