@@ -1,7 +1,6 @@
 /* common */
 
 body {
-  margin: 0;
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
@@ -10,19 +9,13 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: none;
-}
-
 li {
   list-style: none;
 }
 
-.navbar {
-  padding: 0;
-}
-
-.nav-link {
+.navbar,
+.nav-link,
+.dropdown-item {
   padding: 0;
 }
 
@@ -38,9 +31,9 @@ header ul {
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 90px;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
   position: absolute;
   top: 0;
@@ -48,57 +41,17 @@ header {
 }
 
 .l-header {
+  height: 90px;
+  width: 88%;
   position: relative;
   display: flex;
   align-items: center;
-  height: 90px;
-  width: 88%;
   justify-content: space-between;
   margin: 0 auto;
 }
 
-.header-logo {
-  display: inline-block;
-  width: 145px;
-}
-
 .header-logo img {
   width: 145px;
-}
-
-.p-global-nav {
-  line-height: 90px;
-  font-size: 14px;
-}
-
-.headermenu-btn {
-  cursor: pointer;
-}
-
-.nav-item {
-  height: 100%;
-  width: 100%;
-}
-
-.concept-list {
-  background-color: #000;
-  border-radius: 0;
-}
-
-.concept-list li {
-  width: 100%;
-  display: block;
-  text-align: center;
-  background-color: #000;
-}
-
-.dropdown-menu {
-  background-color: #000;
-  border-radius: 0;
-}
-
-.dropdown-item {
-  padding: 0;
 }
 
 /* <-----header */
@@ -129,36 +82,27 @@ header {
   }
 
   header .navbar-expand-xl .navbar-nav .nav-link {
-    display: block;
     font-size: 14px;
     transition: 0.2s;
     color: #fff;
-    height: 100%;
   }
 
   header .navbar-expand-xl .navbar-nav .nav-link:hover {
     color: #999;
-    text-decoration: none;
-  }
-
-  .concept {
-    position: relative;
   }
 
   .concept-list {
-    display: none;
     position: absolute;
-    top: 100%;
-    left: 0px;
+  }
+
+  .concept:hover ul {
+    display: block;
   }
 
   header .navbar-expand-xl .navbar-nav .concept-list .nav-link {
     width: 220px;
-    padding: 17px 18px;
-    font-size: 14px;
+    padding: 18px;
     line-height: 16px;
-    display: block;
-    text-align: left;
     background-color: #000;
     color: #fff;
   }
@@ -172,17 +116,12 @@ header {
     color: #fff;
   }
 
-  .concept:hover ul {
-    display: block;
-  }
 }
 
 @media (max-width: 1199px) {
   header {
     background-color: #000;
     height: 60px;
-    display: flex;
-    flex-direction: column;
   }
 
   .l-header {
@@ -195,14 +134,13 @@ header {
   .headermenu-btn {
     height: 60px;
     width: 60px;
-    background-color: #000;
-    border: none;
-    padding: 6px 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    cursor: pointer;
   }
 
   .headermenu-btn div {
@@ -223,10 +161,7 @@ header {
     bottom: 20px;
   }
 
-  .navbar-nav {
-    padding: 0;
-  }
-  .navlink {
+  .navbar-nav,.nav-link  {
     padding: 0;
   }
 
@@ -234,24 +169,12 @@ header {
     background-color: #000;
   }
 
-  .header-menu {
-    width: 100%;
-  }
-
   .header-list {
     background-color: #000;
-    display: flex;
-    flex-direction: column;
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
-    margin: 0;
-    border: none;
-  }
-
-  .header-list li {
-    display: block;
   }
 
   header .navbar-nav .nav-link {
@@ -259,18 +182,10 @@ header {
     display: flex;
     align-items: center;
     height: 50px;
-    width: 100%;
     padding: 0 50px;
-    vertical-align: middle;
     font-size: 12px;
     font-weight: 100;
     background-color: #000;
-  }
-
-  .nav-item {
-    display: block;
-    width: 100%;
-    height: 100%;
   }
 
   .concept {
@@ -283,47 +198,27 @@ header {
     right: 5px;
   }
 
-  .dropdown-menu-btn {
+  .concept-menu-btn {
     width: 24px;
     height: 24px;
-    background-color: #000;
     border: #fff solid 1px;
     border-radius: 100%;
-    display: block;
     position: absolute;
     top: 15px;
     right: 15px;
-    color: #fff;
-    line-height: 24px;
   }
 
   .concept-list {
-    width: 100%;
-    padding-left: 14px;
+    padding-left: 12px;
     position: static;
   }
 
-  .concept-list li {
-    width: 100%;
-    background-color: #000;
-    border: none;
-  }
-
   .concept-list a {
-    width: 100%;
-    line-height: 50px;
     padding: 0 50px;
   }
 }
 
-/* タブレット */
-@media (max-width: 991px) {
-  header {
-    position: static;
-  }
-}
-
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .l-header {
     padding-left: 20px;
   }
