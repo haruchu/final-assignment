@@ -13,6 +13,10 @@ li {
   list-style: none;
 }
 
+button:focus{
+  outline: none;
+}
+
 .navbar,
 .nav-link,
 .dropdown-item {
