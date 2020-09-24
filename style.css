@@ -1,6 +1,62 @@
 /* common */
 
+body {
+  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button:focus{
+  outline: none;
+}
+
+.navbar,
+.nav-link,
+.dropdown-item {
+  padding: 0;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
 /* ----->header */
+
+header ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.l-header {
+  height: 90px;
+  width: 88%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.header-logo img {
+  width: 145px;
+}
 
 /* <-----header */
 
@@ -11,3 +67,171 @@
 /* ----->footer */
 
 /* <-----footer */
+
+@media (min-width: 1200px) {
+  .header-list {
+    line-height: 90px;
+  }
+
+  #header-dropdown {
+    display: flex;
+  }
+
+  header .navbar-expand-xl .navbar-nav .dropdown-item:hover {
+    background-color: transparent;
+  }
+
+  header .navbar-expand-xl .navbar-nav li {
+    padding: 0 15px;
+  }
+
+  header .navbar-expand-xl .navbar-nav .nav-link {
+    font-size: 14px;
+    transition: 0.2s;
+    color: #fff;
+  }
+
+  header .navbar-expand-xl .navbar-nav .nav-link:hover {
+    color: #999;
+  }
+
+  .concept-list {
+    position: absolute;
+  }
+
+  .concept:hover ul {
+    display: block;
+  }
+
+  header .navbar-expand-xl .navbar-nav .concept-list .nav-link {
+    width: 220px;
+    padding: 18px;
+    line-height: 16px;
+    background-color: #000;
+    color: #fff;
+  }
+
+  header .navbar-expand-xl .navbar-nav .concept-list li {
+    padding: 0;
+  }
+
+  header .navbar-nav .concept-list .nav-link:hover {
+    background-color: #442602;
+    color: #fff;
+  }
+
+}
+
+@media (max-width: 1199px) {
+  header {
+    background-color: #000;
+    height: 60px;
+  }
+
+  .l-header {
+    height: 100%;
+    width: 100%;
+    padding-left: 50px;
+    margin: 0;
+  }
+
+  .headermenu-btn {
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .headermenu-btn div {
+    height: 3px;
+    width: 16px;
+    margin: 1px;
+    background-color: #fff;
+    border-radius: 1px;
+  }
+
+  .headermenu-btn span div:nth-of-type(1) {
+    position: absolute;
+    top: 20px;
+  }
+
+  .headermenu-btn span div:nth-of-type(3) {
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .navbar-nav,.nav-link  {
+    padding: 0;
+  }
+
+  .dropdown-item:hover {
+    background-color: #000;
+  }
+
+  .header-list {
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+
+  header .navbar-nav .nav-link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 50px;
+    font-size: 12px;
+    font-weight: 100;
+    background-color: #000;
+  }
+
+  .concept {
+    position: relative;
+  }
+
+  .concept-btn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+  }
+
+  .concept-menu-btn {
+    width: 24px;
+    height: 24px;
+    border: #fff solid 1px;
+    border-radius: 100%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .concept-list {
+    padding-left: 12px;
+    position: static;
+  }
+
+  .concept-list a {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .l-header {
+    padding-left: 20px;
+  }
+
+  .header-logo img {
+    width: 110px;
+  }
+
+  header .navbar-nav .nav-link {
+    padding: 0 20px;
+  }
+}
