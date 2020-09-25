@@ -45,7 +45,16 @@
               <a href="#" class="nav-link">HOME</a>
             </li>
             <li class="dropdown-item dropdown concept">
-              <a href="#" class="nav-link">CONCEPT </a>
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="concept"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >CONCEPT
+              </a>
               <div class="navbar concept-btn">
                 <button
                   class="concept-menu-btn navbar-toggler"
@@ -57,7 +66,11 @@
                   aria-label="Toggle navigation"
                 ></button>
               </div>
-              <ul class="concept-list collapse" id="concept-dropdown">
+              <ul
+                class="concept-list collapse dropdown-menu"
+                id="concept-dropdown"
+                aria-labelledby="concept"
+              >
                 <li class="dropdown-item">
                   <a href="#" class="nav-link">ブログアーカイブ</a>
                 </li>
