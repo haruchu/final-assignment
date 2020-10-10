@@ -23,6 +23,17 @@ li {
   border: none;
 }
 
+.l-inner {
+  position: relative;
+  width: 90%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.p-cb-item {
+  margin-bottom: 100px;
+}
+
 /* ----->header */
 
 header ul {
@@ -32,8 +43,7 @@ header ul {
 
 header {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 header > .navbar {
@@ -46,6 +56,9 @@ header > .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
 }
 
 .header-logo img {
@@ -128,6 +141,63 @@ header .navbar-nav .concept-list .nav-link:hover {
 
 /* ----->main */
 
+.top-wrapper {
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-wrapper-img {
+  display: block;
+  width: 100%;
+}
+
+.top-wrapper-text {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.top-wrapper-title {
+  color: #fff;
+  font-size: 36px;
+  writing-mode: vertical-rl;
+  line-height: 1.3;
+  font-weight: 500;
+  text-align: left;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+.content1 {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 70px 0;
+  margin-bottom: 30px;
+}
+
+.content1 p,
+.content1 h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.content1 h1 {
+  font-family: serif;
+  font-size: 36px;
+  padding-bottom: 16px;
+}
+
+.content1 p {
+  font-size: 14px;
+  line-height: 2.6;
+}
+
 /* <-----main */
 
 /* ----->footer */
@@ -150,6 +220,7 @@ header .navbar-nav .concept-list .nav-link:hover {
   .l-header {
     height: 100%;
     margin: 0;
+    position: relative;
   }
 
   .headermenu-btn {
@@ -205,6 +276,15 @@ header .navbar-nav .concept-list .nav-link:hover {
 }
 
 @media (max-width: 767px) {
+  .l-inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .p-cb-item {
+    margin-bottom: 40px;
+  }
+
   header > .navbar {
     padding: 0 0 0 20px;
   }
@@ -219,5 +299,37 @@ header .navbar-nav .concept-list .nav-link:hover {
 
   header .navbar .navbar-nav .concept-list .nav-link {
     padding: 0 20px;
+  }
+
+  .top-wrapper {
+    height: 360px;
+  }
+
+  .top-wrapper-img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  .top-wrapper-text span {
+    font-size: 20px;
+  }
+
+  .content1 {
+    margin-bottom: 40px;
+    padding: 32px 0;
+  }
+
+  .content1 h1 {
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+
+  .content1 p {
+    line-height: 2;
   }
 }
