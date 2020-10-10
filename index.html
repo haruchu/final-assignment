@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>課題</title>
   </head>
+
   <body>
     <header>
       <nav class="navbar navbar-expand-xl l-header">
@@ -21,7 +22,7 @@
             <img src="./img/header-logo.png" />
           </a>
         </div>
-        <div class="navbar">
+        <div>
           <button
             class="headermenu-btn navbar-toggler"
             type="button"
@@ -29,7 +30,6 @@
             data-target="#header-dropdown"
             aria-controls="header-dropdown"
             aria-expanded="false"
-            aria-label="Toggle navigation"
           >
             <div></div>
             <div></div>
@@ -45,19 +45,16 @@
               <a href="#" class="nav-link">HOME</a>
             </li>
             <li class="dropdown-item dropdown concept">
-              <a href="#" class="nav-link">CONCEPT </a>
-              <div class="navbar concept-btn">
-                <button
-                  class="concept-menu-btn navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#concept-dropdown"
-                  aria-controls="concept-dropdown"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                ></button>
-              </div>
-              <ul class="concept-list collapse" id="concept-dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="concept"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+                >CONCEPT
+              </a>
+              <ul class="concept-list dropdown-menu" aria-labelledby="concept">
                 <li class="dropdown-item">
                   <a href="#" class="nav-link">ブログアーカイブ</a>
                 </li>
