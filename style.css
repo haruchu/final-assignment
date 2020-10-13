@@ -26,7 +26,6 @@ li {
 .l-inner {
   position: relative;
   width: 90%;
-  max-width: 1180px;
   margin: 0 auto;
 }
 
@@ -302,16 +301,12 @@ header .navbar-nav .concept-list .nav-link:hover {
   }
 
   .top-wrapper {
-    height: 360px;
+    height: 520px;
   }
 
   .top-wrapper-img {
-    width: auto;
     height: 100%;
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: auto;
+    width: auto;
   }
 
   .top-wrapper-text span {
@@ -331,5 +326,12 @@ header .navbar-nav .concept-list .nav-link:hover {
 
   .content1 p {
     line-height: 2;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .top-wrapper {
+    height: 360px;
   }
 }
