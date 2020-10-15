@@ -23,13 +23,12 @@ li {
   border: none;
 }
 
-.l-inner {
-  position: relative;
+.inner-size {
   width: 90%;
   margin: 0 auto;
 }
 
-.p-cb-item {
+.item-bottom-space {
   margin-bottom: 100px;
 }
 
@@ -42,7 +41,6 @@ header ul {
 
 header {
   width: 100%;
-  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 header > .navbar {
@@ -140,27 +138,23 @@ header .navbar-nav .concept-list .nav-link:hover {
 
 /* ----->main */
 
-.top-wrapper {
+.top {
   background-color: #000;
-  position: relative;
-  overflow: hidden;
+  background-image: url(./img/top-img.jpg);
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  align-items: center;
 }
 
-.top-wrapper-img {
-  display: block;
-  width: 100%;
-}
-
-.top-wrapper-text {
-  position: absolute;
-  top: 30%;
-  left: 0;
+.top-title {
   width: 100%;
   padding: 0 20px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.top-wrapper-title {
+.top-title span {
   color: #fff;
   font-size: 36px;
   writing-mode: vertical-rl;
@@ -177,12 +171,10 @@ header .navbar-nav .concept-list .nav-link:hover {
   color: #fff;
   text-align: center;
   padding: 70px 0;
-  margin-bottom: 30px;
 }
 
 .content1 p,
 .content1 h1 {
-  padding: 0;
   margin: 0;
 }
 
@@ -272,15 +264,19 @@ header .navbar-nav .concept-list .nav-link:hover {
   header .navbar-nav .concept-list .nav-link:hover {
     background-color: #000;
   }
+
+  .top {
+    height: 600px;
+  }
 }
 
 @media (max-width: 767px) {
-  .l-inner {
+  .inner-size {
     width: 100%;
     padding: 0 20px;
   }
 
-  .p-cb-item {
+  .item-bottom-space {
     margin-bottom: 40px;
   }
 
@@ -300,16 +296,11 @@ header .navbar-nav .concept-list .nav-link:hover {
     padding: 0 20px;
   }
 
-  .top-wrapper {
-    height: 520px;
+  .top {
+    height: 500px;
   }
 
-  .top-wrapper-img {
-    height: 100%;
-    width: auto;
-  }
-
-  .top-wrapper-text span {
+  .top-title span {
     font-size: 20px;
   }
 
@@ -320,8 +311,7 @@ header .navbar-nav .concept-list .nav-link:hover {
 
   .content1 h1 {
     font-size: 20px;
-    padding: 0;
-    margin-bottom: 8px;
+    padding-bottom: 8px;
   }
 
   .content1 p {
@@ -330,8 +320,7 @@ header .navbar-nav .concept-list .nav-link:hover {
 }
 
 @media (max-width: 550px) {
-
-  .top-wrapper {
+  .top {
     height: 360px;
   }
 }
