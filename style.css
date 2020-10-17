@@ -41,6 +41,7 @@ header ul {
 
 header {
   width: 100%;
+  position: relative;
 }
 
 header > .navbar {
@@ -49,13 +50,12 @@ header > .navbar {
 
 .l-header {
   width: 100%;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: absolute;
+  top: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 99;
 }
 
 .header-logo img {
@@ -138,11 +138,12 @@ header .navbar-nav .concept-list .nav-link:hover {
 
 /* ----->main */
 
-.top {
+#top {
   background-color: #000;
   background-image: url(./img/top-img.jpg);
   background-size: cover;
-  height: 800px;
+  width: 100%;
+  height: 60vw;
   display: flex;
   align-items: center;
 }
@@ -156,35 +157,34 @@ header .navbar-nav .concept-list .nav-link:hover {
 
 .top-title span {
   color: #fff;
-  font-size: 36px;
+  font-size: 3vw;
   writing-mode: vertical-rl;
   line-height: 1.3;
   font-weight: 500;
-  text-align: left;
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
-.content1 {
+#content1 {
   background-color: #000;
   color: #fff;
   text-align: center;
   padding: 70px 0;
 }
 
-.content1 p,
-.content1 h1 {
+#content1 p,
+#content1 h1 {
   margin: 0;
 }
 
-.content1 h1 {
+#content1 h1 {
   font-family: serif;
   font-size: 36px;
   padding-bottom: 16px;
 }
 
-.content1 p {
+#content1 p {
   font-size: 14px;
   line-height: 2.6;
 }
@@ -264,16 +264,11 @@ header .navbar-nav .concept-list .nav-link:hover {
   header .navbar-nav .concept-list .nav-link:hover {
     background-color: #000;
   }
-
-  .top {
-    height: 600px;
-  }
 }
 
 @media (max-width: 767px) {
   .inner-size {
     width: 100%;
-    padding: 0 20px;
   }
 
   .item-bottom-space {
@@ -296,31 +291,18 @@ header .navbar-nav .concept-list .nav-link:hover {
     padding: 0 20px;
   }
 
-  .top {
-    height: 500px;
-  }
-
-  .top-title span {
-    font-size: 20px;
-  }
-
-  .content1 {
+  #content1 {
     margin-bottom: 40px;
     padding: 32px 0;
   }
 
-  .content1 h1 {
+  #content1 h1 {
     font-size: 20px;
     padding-bottom: 8px;
   }
 
-  .content1 p {
+  #content1 p {
     line-height: 2;
-  }
-}
-
-@media (max-width: 550px) {
-  .top {
-    height: 360px;
+    padding: 0 20px;
   }
 }
