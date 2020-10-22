@@ -272,6 +272,7 @@ header .navbar-nav .concept-list .nav-link:hover {
 @media (max-width: 767px) {
   .inner-size {
     width: 100%;
+    padding: 0 20px;
   }
 
   .item-bottom-space {
@@ -310,7 +311,6 @@ header .navbar-nav .concept-list .nav-link:hover {
 
   .content1 p {
     line-height: 2;
-    padding: 0 20px;
   }
 }
 
