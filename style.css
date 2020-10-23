@@ -23,6 +23,15 @@ li {
   border: none;
 }
 
+.inner-size {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.item-bottom-space {
+  margin-bottom: 100px;
+}
+
 /* ----->header */
 
 header ul {
@@ -32,8 +41,7 @@ header ul {
 
 header {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  position: relative;
 }
 
 header > .navbar {
@@ -42,10 +50,12 @@ header > .navbar {
 
 .l-header {
   width: 100%;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header-logo img {
@@ -128,6 +138,56 @@ header .navbar-nav .concept-list .nav-link:hover {
 
 /* ----->main */
 
+.top-backimage {
+  background-color: #000;
+  background-image: url(./img/top-img.jpg);
+  background-size: cover;
+  height: 60vw;
+  display: flex;
+  align-items: center;
+}
+
+.top-title {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.top-title span {
+  color: #fff;
+  font-size: 48px;
+  writing-mode: vertical-rl;
+  line-height: 1.3;
+  font-weight: 500;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+.content1 {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 70px 0;
+}
+
+.content1 p,
+.content1 h1 {
+  margin: 0;
+}
+
+.content1 h1 {
+  font-family: serif;
+  font-size: 36px;
+  padding-bottom: 16px;
+}
+
+.content1 p {
+  font-size: 14px;
+  line-height: 2.6;
+}
+
 /* <-----main */
 
 /* ----->footer */
@@ -150,6 +210,7 @@ header .navbar-nav .concept-list .nav-link:hover {
   .l-header {
     height: 100%;
     margin: 0;
+    position: relative;
   }
 
   .headermenu-btn {
@@ -202,9 +263,22 @@ header .navbar-nav .concept-list .nav-link:hover {
   header .navbar-nav .concept-list .nav-link:hover {
     background-color: #000;
   }
+
+  .top-title span {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 767px) {
+  .inner-size {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .item-bottom-space {
+    margin-bottom: 40px;
+  }
+
   header > .navbar {
     padding: 0 0 0 20px;
   }
@@ -220,4 +294,30 @@ header .navbar-nav .concept-list .nav-link:hover {
   header .navbar .navbar-nav .concept-list .nav-link {
     padding: 0 20px;
   }
+
+  .top-title span {
+    font-size: 24px;
+  }
+
+  .content1 {
+    margin-bottom: 40px;
+    padding: 32px 0;
+  }
+
+  .content1 h1 {
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
+
+  .content1 p {
+    line-height: 2;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .top-title span {
+    font-size: 16px;
+  }
+
 }
