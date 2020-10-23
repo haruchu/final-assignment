@@ -188,6 +188,42 @@ header .navbar-nav .concept-list .nav-link:hover {
   line-height: 2.6;
 }
 
+
+#content h2,
+#content p {
+  margin: 0;
+}
+
+.content2-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content2-img {
+  width: 25%;
+}
+
+.content2-txt {
+  background-color: #f5f5f5;
+  padding: 52px 20px;
+  text-align: center;
+}
+
+.content2-txt h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: #442602;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+.content2-txt p {
+  font-size: 14px;
+  line-height: 2.6;
+  font-family: serif;
+}
+
 /* <-----main */
 
 /* ----->footer */
@@ -270,13 +306,13 @@ header .navbar-nav .concept-list .nav-link:hover {
 }
 
 @media (max-width: 767px) {
-  .inner-size {
-    width: 100%;
-    padding: 0 20px;
-  }
 
   .item-bottom-space {
     margin-bottom: 40px;
+  }
+
+  .item-top-space {
+    margin-top: 0;
   }
 
   header > .navbar {
@@ -310,6 +346,27 @@ header .navbar-nav .concept-list .nav-link:hover {
   }
 
   .content1 p {
+    line-height: 2;
+  }
+
+  #content2 h2,
+  #content2 p {
+    margin: 0;
+  }
+
+  .content2-images img {
+    width: 50%;
+  }
+
+  .content2-txt {
+    padding: 36px 24px;
+  }
+
+  .content2-txt h2 {
+    font-size: 20px;
+  }
+
+  .content2-txt p {
     line-height: 2;
   }
 }
