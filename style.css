@@ -134,7 +134,7 @@ header .navbar-nav .concept-list .nav-link:hover {
 
 /* ----->main */
 
-.top-backimage {
+.top_backimage {
   background-color: #000;
   background-image: url(./img/top-img.jpg);
   background-size: cover;
@@ -143,14 +143,14 @@ header .navbar-nav .concept-list .nav-link:hover {
   align-items: center;
 }
 
-.top-title {
+.top_title {
   width: 100%;
   padding: 0 20px;
   display: flex;
   justify-content: center;
 }
 
-.top-title span {
+.top_title span {
   color: #fff;
   font-size: 48px;
   writing-mode: vertical-rl;
@@ -161,48 +161,48 @@ header .navbar-nav .concept-list .nav-link:hover {
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
-.top-b-desc,
-.cafe-info-txt {
+.top_desc,
+.cafe_info-txt {
   text-align: center;
   padding: 70px 0;
 }
 
-.top-b-desc {
+.top_desc {
   background-color: #000;
   color: #fff;
 }
 
-.cafe-info-txt {
+.cafe_info-txt {
   background-color: #f5f5f5;
   color: #442602;
 }
 
-.top-b-desc p,
-.top-b-desc h1,
-#cafe-info h2,
-#cafe-info p {
+.top_desc p,
+.top_desc h1,
+#cafe_info h2,
+#cafe_info p {
   margin: 0;
 }
 
-.top-b-desc h1,
-.cafe-info-txt h2 {
+.top_desc h1,
+.cafe_info-txt h2 {
   font-family: serif;
   font-size: 36px;
   padding-bottom: 16px;
 }
 
-.top-b-desc p,
-.cafe-info-txt p {
+.top_desc p,
+.cafe_info-txt p {
   font-size: 14px;
   line-height: 2.6;
 }
 
-.cafe-info-images {
+.cafe_info-images {
   display: flex;
   flex-wrap: wrap;
 }
 
-.cafe-info-img {
+.cafe_info-img {
   width: 25%;
 }
 
@@ -282,7 +282,7 @@ header .navbar-nav .concept-list .nav-link:hover {
     background-color: #000;
   }
 
-  .top-title span {
+  .top_title span {
     font-size: 36px;
   }
 }
@@ -304,34 +304,34 @@ header .navbar-nav .concept-list .nav-link:hover {
     padding: 0 20px;
   }
 
-  .top-title span {
+  .top_title span {
     font-size: 24px;
   }
 
-  .top-b-desc,
-  .cafe-info-txt {
+  .top_desc,
+  .cafe_info-txt {
     margin-bottom: 40px;
     padding: 32px 0;
   }
 
-  .top-b-desc h1,
-  .cafe-info-txt h2 {
+  .top_desc h1,
+  .cafe_info-txt h2 {
     font-size: 20px;
     padding-bottom: 8px;
   }
 
-  .top-b-desc p,
-  .cafe-info-txt p {
+  .top_desc p,
+  .cafe_info-txt p {
     line-height: 2;
   }
 
-  .cafe-info-images img {
+  .cafe_info-images img {
     width: 50%;
   }
 }
 
 @media (max-width: 500px) {
-  .top-title span {
+  .top_title span {
     font-size: 16px;
   }
 }
