@@ -171,7 +171,7 @@ header .navbar-nav .concept-list .nav-link:hover {
   color: #fff;
 }
 
-#cafe-info{
+#cafe-info {
   padding: 0 40px;
 }
 
@@ -285,12 +285,11 @@ header .navbar-nav .concept-list .nav-link:hover {
     background-color: #000;
   }
 
-
   .top-title span {
     font-size: 36px;
   }
 
-  #cafe-info{
+  #cafe-info {
     padding: 0 20px;
   }
 
@@ -316,7 +315,6 @@ header .navbar-nav .concept-list .nav-link:hover {
   header .navbar .navbar-nav .concept-list .nav-link {
     padding: 0 20px;
   }
-
 
   .top-title span {
     font-size: 24px;
