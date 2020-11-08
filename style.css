@@ -24,12 +24,7 @@ li {
 }
 
 .inner-size {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.item-bottom-space {
-  margin-bottom: 100px;
+  padding: 0 50px;
 }
 
 /* ----->header */
@@ -165,27 +160,53 @@ header .navbar-nav .concept-list .nav-link:hover {
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
-.content1 {
-  background-color: #000;
-  color: #fff;
+.top-desc,
+.cafe-info-txt {
   text-align: center;
   padding: 70px 0;
 }
 
-.content1 p,
-.content1 h1 {
+.top-desc {
+  background-color: #000;
+  color: #fff;
+}
+
+#cafe-info {
+  padding: 0 40px;
+}
+
+.cafe-info-txt {
+  background-color: #f5f5f5;
+  color: #442602;
+}
+
+.top-desc p,
+.top-desc h1,
+#cafe-info h2,
+#cafe-info p {
   margin: 0;
 }
 
-.content1 h1 {
+.top-desc h1,
+.cafe-info-txt h2 {
   font-family: serif;
   font-size: 36px;
   padding-bottom: 16px;
 }
 
-.content1 p {
+.top-desc p,
+.cafe-info-txt p {
   font-size: 14px;
   line-height: 2.6;
+}
+
+.cafe-info-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cafe-info-img {
+  width: 25%;
 }
 
 /* <-----main */
@@ -267,18 +288,18 @@ header .navbar-nav .concept-list .nav-link:hover {
   .top-title span {
     font-size: 36px;
   }
-}
 
-@media (max-width: 767px) {
-  .inner-size {
-    width: 100%;
+  #cafe-info {
     padding: 0 20px;
   }
 
-  .item-bottom-space {
-    margin-bottom: 40px;
+  .top-desc,
+  .cafe-info-txt {
+    padding: 48px 28px;
   }
+}
 
+@media (max-width: 767px) {
   header > .navbar {
     padding: 0 0 0 20px;
   }
@@ -299,25 +320,30 @@ header .navbar-nav .concept-list .nav-link:hover {
     font-size: 24px;
   }
 
-  .content1 {
+  .top-desc,
+  .cafe-info-txt {
     margin-bottom: 40px;
-    padding: 32px 0;
+    padding: 32px 20px;
   }
 
-  .content1 h1 {
+  .top-desc h1,
+  .cafe-info-txt h2 {
     font-size: 20px;
     padding-bottom: 8px;
   }
 
-  .content1 p {
+  .top-desc p,
+  .cafe-info-txt p {
     line-height: 2;
+  }
+
+  .cafe-info-images img {
+    width: 50%;
   }
 }
 
 @media (max-width: 500px) {
-
   .top-title span {
     font-size: 16px;
   }
-
 }
