@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 li {
   list-style: none;
 }
@@ -23,8 +27,22 @@ li {
   border: none;
 }
 
-.inner-size {
-  padding: 0 50px;
+.link-btn {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  width: 200px;
+  padding: 0 15px;
+  line-height: 55px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.link-btn:hover {
+  color: #fff;
+  background-color: #442602;
 }
 
 /* ----->header */
@@ -171,7 +189,8 @@ header .navbar-nav .concept-list .nav-link:hover {
   color: #fff;
 }
 
-#cafe-info {
+#cafe-info,
+#cafe-desc {
   padding: 0 40px;
 }
 
@@ -207,6 +226,56 @@ header .navbar-nav .concept-list .nav-link:hover {
 
 .cafe-info-img {
   width: 25%;
+}
+
+#cafe-desc .card {
+  border: none;
+}
+
+.cafe-desc-link {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.cafe-desc-link::before {
+  border-top: 75px solid #fff;
+  border-right: 75px solid transparent;
+  border-bottom: 75px solid transparent;
+  border-left: 75px solid #fff;
+  content: "";
+  position: absolute;
+  z-index: 1;
+}
+
+.cafe-desc-link-title {
+  margin: 0;
+  padding-left: 8px;
+  position: absolute;
+  font-size: 20px;
+  font-weight: 700;
+  color: #442602;
+  z-index: 1;
+}
+
+.cafe-desc-link-img {
+  width: 100%;
+}
+
+.cafe-desc-text {
+  padding: 32px;
+  background-color: #f5f5f5;
+}
+
+.cafe-desc-text p {
+  font-size: 14px;
+  line-height: 2.4;
+  margin-bottom: 32px;
+}
+
+.cafe-desc-text .cafe-desc-btn {
+  text-align: center;
+  margin: 0;
 }
 
 /* <-----main */
@@ -285,11 +354,17 @@ header .navbar-nav .concept-list .nav-link:hover {
     background-color: #000;
   }
 
+  .link-btn {
+    width: 150px;
+    font-size: 12px;
+  }
+
   .top-title span {
     font-size: 36px;
   }
 
-  #cafe-info {
+  #cafe-info,
+  #cafe-desc {
     padding: 0 20px;
   }
 
@@ -316,6 +391,11 @@ header .navbar-nav .concept-list .nav-link:hover {
     padding: 0 20px;
   }
 
+  .link-btn {
+    width: 180px;
+    line-height: 45px;
+  }
+
   .top-title span {
     font-size: 24px;
   }
@@ -339,6 +419,23 @@ header .navbar-nav .concept-list .nav-link:hover {
 
   .cafe-info-images img {
     width: 50%;
+  }
+
+  #cafe-desc .card {
+    margin-bottom: 32px;
+  }
+
+  .cafe-desc-link-title {
+    font-size: 18px;
+  }
+
+  .cafe-desc-text {
+    padding: 24px;
+  }
+
+  .cafe-desc-text p {
+    margin-bottom: 16px;
+    line-height: 2;
   }
 }
 
