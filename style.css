@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 li {
   list-style: none;
 }
@@ -23,8 +27,21 @@ li {
   border: none;
 }
 
-.inner-size {
-  padding: 0 50px;
+.link-btn {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  padding: 0 15px;
+  line-height: 55px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.link-btn:hover {
+  color: #fff;
+  background-color: #442602;
 }
 
 /* ----->header */
@@ -133,7 +150,16 @@ header .navbar-nav .concept-list .nav-link:hover {
 
 /* ----->main */
 
-.top-backimage {
+section {
+  padding: 0 40px;
+  margin-bottom: 48px;
+}
+
+#top {
+  padding: 0;
+}
+
+#top .backimage {
   background-color: #000;
   background-image: url(./img/top-img.jpg);
   background-size: cover;
@@ -142,14 +168,14 @@ header .navbar-nav .concept-list .nav-link:hover {
   align-items: center;
 }
 
-.top-title {
+#top .title {
   width: 100%;
   padding: 0 20px;
   display: flex;
   justify-content: center;
 }
 
-.top-title span {
+#top .title span {
   color: #fff;
   font-size: 48px;
   writing-mode: vertical-rl;
@@ -160,53 +186,101 @@ header .navbar-nav .concept-list .nav-link:hover {
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
-.top-desc,
-.cafe-info-txt {
+#top .desc,
+#cafe-info .text {
   text-align: center;
   padding: 70px 0;
 }
 
-.top-desc {
+#top .desc {
   background-color: #000;
   color: #fff;
+  margin-bottom: 48px;
 }
 
-#cafe-info {
-  padding: 0 40px;
-}
-
-.cafe-info-txt {
+#cafe-info .text {
   background-color: #f5f5f5;
   color: #442602;
 }
 
-.top-desc p,
-.top-desc h1,
+#top .desc p,
+#top .desc h1,
 #cafe-info h2,
 #cafe-info p {
   margin: 0;
 }
 
-.top-desc h1,
-.cafe-info-txt h2 {
+#top .desc h1,
+#cafe-info .text h2 {
   font-family: serif;
   font-size: 36px;
   padding-bottom: 16px;
 }
 
-.top-desc p,
-.cafe-info-txt p {
+#top .desc p,
+#cafe-info .text p {
   font-size: 14px;
   line-height: 2.6;
 }
 
-.cafe-info-images {
+#cafe-info .images {
   display: flex;
   flex-wrap: wrap;
 }
 
-.cafe-info-img {
+#cafe-info img {
   width: 25%;
+}
+
+#cafe-desc .card {
+  border: none;
+}
+
+#cafe-desc .link {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+#cafe-desc .link::before {
+  border-bottom: 150px solid transparent;
+  border-left: 150px solid #fff;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#cafe-desc .link .title {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #442602;
+  z-index: 1;
+}
+
+#cafe-desc .link img {
+  width: 100%;
+}
+
+#cafe-desc .text {
+  padding: 32px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+#cafe-desc .text p {
+  font-size: 14px;
+  line-height: 2.4;
+  margin-bottom: 32px;
+}
+
+#cafe-desc .text button {
+  padding: 0;
+  border: 0;
 }
 
 /* <-----main */
@@ -285,17 +359,22 @@ header .navbar-nav .concept-list .nav-link:hover {
     background-color: #000;
   }
 
-  .top-title span {
-    font-size: 36px;
-  }
-
-  #cafe-info {
+  section {
     padding: 0 20px;
   }
 
-  .top-desc,
-  .cafe-info-txt {
-    padding: 48px 28px;
+  .link-btn {
+    width: 150px;
+    font-size: 12px;
+  }
+
+  #top .title span {
+    font-size: 36px;
+  }
+
+  #top .desc,
+  #cafe-desc .text {
+    padding: 40px 28px;
   }
 }
 
@@ -316,34 +395,56 @@ header .navbar-nav .concept-list .nav-link:hover {
     padding: 0 20px;
   }
 
-  .top-title span {
+  .link-btn {
+    width: 180px;
+    line-height: 45px;
+  }
+
+  #top .title span {
     font-size: 24px;
   }
 
-  .top-desc,
-  .cafe-info-txt {
+  #top .desc,
+  #cafe-info .text {
     margin-bottom: 40px;
     padding: 32px 20px;
   }
 
-  .top-desc h1,
-  .cafe-info-txt h2 {
+  #top .desc h1,
+  #cafe-info .text h2 {
     font-size: 20px;
     padding-bottom: 8px;
   }
 
-  .top-desc p,
-  .cafe-info-txt p {
+  #top .desc p,
+  #cafe-info .text p {
     line-height: 2;
   }
 
-  .cafe-info-images img {
+  #cafe-info .images img {
     width: 50%;
+  }
+
+  #cafe-desc .card {
+    margin-bottom: 32px;
+  }
+
+  #cafe-desc .link .title {
+    font-size: 18px;
+  }
+
+  #cafe-desc .text {
+    padding: 24px;
+  }
+
+  #cafe-desc .text p {
+    margin-bottom: 16px;
+    line-height: 2;
   }
 }
 
 @media (max-width: 500px) {
-  .top-title span {
+  #top .title span {
     font-size: 16px;
   }
 }
