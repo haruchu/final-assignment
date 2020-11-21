@@ -298,8 +298,7 @@ section {
 }
 
 #news-event {
-  margin-bottom: 100px;
-  padding-top: 60px;
+  padding: 60px 40px;
   background: #f5f5f5;
 }
 
@@ -373,7 +372,7 @@ section {
 }
 
 .event article img {
-  width: 207px;
+  width: 228px;
 }
 
 .event article .text {
