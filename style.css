@@ -55,7 +55,6 @@ li {
 
 .hover-action-child:hover {
   transform: scale(1.2, 1.2);
-  transition: all 0.5s;
 }
 
 /* ----->header */
@@ -334,8 +333,8 @@ section {
   font-size: 45px;
 }
 
-#news-event .news-title span,
-#news-event .event-title span {
+#news-event .news-title div,
+#news-event .event-title div {
   margin-left: 16px;
 }
 
@@ -585,8 +584,8 @@ section {
     font-size: 28px;
   }
 
-  #news-event .news-title span,
-  #news-event .event-title span {
+  #news-event .news-title div,
+  #news-event .event-title div {
     margin-left: 12px;
     font-size: 14px;
   }
