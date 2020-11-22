@@ -44,6 +44,19 @@ li {
   background-color: #442602;
 }
 
+.hover-action-parent {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hover-action-child {
+  transition: all 0.5s;
+}
+
+.hover-action-child:hover {
+  transform: scale(1.2, 1.2);
+}
+
 /* ----->header */
 
 header ul {
@@ -283,6 +296,118 @@ section {
   border: 0;
 }
 
+#news-event {
+  padding: 60px 40px;
+  background: #f5f5f5;
+}
+
+#news-event .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#news-event h2,
+#news-event h3,
+#news-event p {
+  margin: 0;
+}
+
+.news,
+.event {
+  margin-bottom: 32px;
+}
+
+#news-event .news-title,
+#news-event .event-title {
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-weight: 500;
+  display: flex;
+  margin-bottom: 36px;
+  align-items: center;
+}
+
+#news-event .news-title h2,
+#news-event .event-title h2 {
+  font-size: 45px;
+}
+
+#news-event .news-title div,
+#news-event .event-title div {
+  margin-left: 16px;
+}
+
+.news article {
+  background-color: #fff;
+  padding: 20px;
+  border: #ddd solid 1px;
+}
+
+.news article .date {
+  color: #999;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.news article .title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.event article {
+  border: solid 1px #ddd;
+  background-color: #fff;
+}
+
+.event .link {
+  display: flex;
+  color: #000;
+}
+
+.event article img {
+  width: 228px;
+}
+
+.event article .text {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 32px;
+}
+
+.event article .text .title {
+  padding-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.event article .text .date {
+  color: #999;
+  font-size: 12px;
+}
+
+#news-event .list-link {
+  font-size: 14px;
+  padding-top: 20px;
+  text-align: right;
+}
+
+#news-event .list-link a {
+  color: #000;
+}
+
+#news-event .list-link a:hover {
+  color: #999;
+}
+
 /* <-----main */
 
 /* ----->footer */
@@ -378,6 +503,13 @@ section {
   }
 }
 
+@media (max-width: 960px) {
+  .news,
+  .event {
+    margin-bottom: 36px;
+  }
+}
+
 @media (max-width: 767px) {
   header > .navbar {
     padding: 0 0 0 20px;
@@ -440,6 +572,54 @@ section {
   #cafe-desc .text p {
     margin-bottom: 16px;
     line-height: 2;
+  }
+
+  #news-event .news-title,
+  #news-event .event-title {
+    margin-bottom: 20px;
+  }
+
+  #news-event .news-title h2,
+  #news-event .event-title h2 {
+    font-size: 28px;
+  }
+
+  #news-event .news-title div,
+  #news-event .event-title div {
+    margin-left: 12px;
+    font-size: 14px;
+  }
+
+  .news article {
+    padding: 12px 20px;
+  }
+
+  .news article .date {
+    margin-bottom: 4px;
+    font-size: 10px;
+  }
+
+  .news article .title {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .event article img {
+    display: none;
+  }
+
+  .event article .text {
+    padding: 16px 20px;
+  }
+
+  .event article .text .title {
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .event article .text .date {
+    font-size: 10px;
   }
 }
 
