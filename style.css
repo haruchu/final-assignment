@@ -408,6 +408,96 @@ section {
   color: #999;
 }
 
+#plan {
+  text-align: center;
+}
+
+#plan .inner {
+  padding: 0 20px;
+}
+
+#plan .title {
+  color: #442506;
+  font-size: 36px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+#plan .desc {
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 2.4;
+}
+
+#plan .planlist {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+#plan .planlist .item {
+  width: 32%;
+  height: 100%;
+}
+
+#plan .planlist .item dd {
+  margin: 0;
+}
+
+#plan .planlist .item:nth-child(2) {
+  border: 5px solid #442607;
+}
+
+#plan .planlist .title {
+  background: #a19283;
+  color: #fff;
+  font-size: 20px;
+  line-height: 60px;
+  margin-bottom: 0;
+  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+#plan .planlist .strong .title {
+  background: #442607;
+  line-height: 55px;
+}
+
+#plan .planlist .price-data {
+  padding: 24px;
+  background: #ece9e6;
+  line-height: 1;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+#plan .planlist .price {
+  margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #442602;
+}
+
+.price .yen {
+  font-size: 20px;
+}
+
+#plan .planlist .data {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#plan button {
+  padding: 0;
+  border: 0;
+}
+
 /* <-----main */
 
 /* ----->footer */
@@ -620,6 +710,43 @@ section {
 
   .event article .text .date {
     font-size: 10px;
+  }
+
+  #plan {
+    margin-bottom: 40px;
+  }
+
+  #plan .title {
+    font-size: 20px;
+  }
+
+  #plan .desc {
+    margin-bottom: 32px;
+    line-height: 2;
+  }
+
+  #plan .planlist {
+    display: block;
+  }
+
+  #plan .planlist .item {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  #plan .planlist .title {
+    height: 45px;
+    font-size: 16px;
+    line-height: 45px;
+  }
+
+  #plan .planlist .price-data {
+    padding: 16px;
+  }
+
+  #plan .planlist .price {
+    margin-bottom: 12px;
+    font-size: 36px;
   }
 }
 
