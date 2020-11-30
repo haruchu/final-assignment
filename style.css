@@ -443,10 +443,6 @@ section {
   height: 100%;
 }
 
-#plan .planlist .item dd {
-  margin: 0;
-}
-
 #plan .planlist .item:nth-child(2) {
   border: 5px solid #442607;
 }
