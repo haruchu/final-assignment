@@ -200,7 +200,8 @@ section {
 }
 
 #top .desc,
-#cafe-info .text {
+#cafe-info .text,
+#plan .text {
   text-align: center;
   padding: 70px 0;
 }
@@ -224,14 +225,16 @@ section {
 }
 
 #top .desc h1,
-#cafe-info .text h2 {
+#cafe-info .text h2,
+#plan .text .h2 {
   font-family: serif;
   font-size: 36px;
   padding-bottom: 16px;
 }
 
 #top .desc p,
-#cafe-info .text p {
+#cafe-info .text p,
+#plan .text p {
   font-size: 14px;
   line-height: 2.6;
 }
@@ -291,7 +294,8 @@ section {
   margin-bottom: 32px;
 }
 
-#cafe-desc .text button {
+#cafe-desc .text button,
+#plan button {
   padding: 0;
   border: 0;
 }
@@ -408,6 +412,11 @@ section {
   color: #999;
 }
 
+#news-event .list-link a::after {
+  content: ">";
+  padding-left: 8px;
+}
+
 #plan {
   text-align: center;
 }
@@ -432,66 +441,64 @@ section {
   line-height: 2.4;
 }
 
-#plan .planlist {
+#plan .plan-list {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 }
 
-#plan .planlist .item {
-  width: 32%;
-  height: 100%;
+#plan .col-md-4,
+#plan .col-12 {
+  padding: 0;
 }
 
-#plan .planlist .item:nth-child(2) {
+#plan .plan-list .item:nth-child(2) {
   border: 5px solid #442607;
 }
 
-#plan .planlist .title {
+#plan .plan-list .plan-title {
   background: #a19283;
   color: #fff;
   font-size: 20px;
+  font-weight: 700;
   line-height: 60px;
   margin-bottom: 0;
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
-#plan .planlist .strong .title {
+#plan .plan-list .item:nth-child(2) .plan-title {
   background: #442607;
   line-height: 55px;
 }
 
-#plan .planlist .price-data {
+#plan .plan-list .price-data {
   padding: 24px;
   background: #ece9e6;
   line-height: 1;
   border: 1px solid #ddd;
   font-size: 14px;
+  border-top: 0;
 }
 
-#plan .planlist .price {
+#plan .plan-list .price {
   margin-bottom: 16px;
   font-size: 40px;
   font-weight: 700;
   color: #442602;
 }
 
-.price .yen {
+#plan .plan-list .price::before {
+  content: "￥";
   font-size: 20px;
 }
 
-#plan .planlist .data {
+#plan .plan-list .data {
   padding: 20px;
   border: 1px solid #ddd;
   border-top: 0;
   font-size: 14px;
   font-weight: 500;
-}
-
-#plan button {
-  padding: 0;
-  border: 0;
 }
 
 /* <-----main */
@@ -721,26 +728,20 @@ section {
     line-height: 2;
   }
 
-  #plan .planlist {
+  #plan .plan-list {
     display: block;
   }
 
-  #plan .planlist .item {
-    width: 100%;
-    margin-bottom: 24px;
-  }
-
-  #plan .planlist .title {
-    height: 45px;
+  #plan .plan-list .plan-title {
     font-size: 16px;
     line-height: 45px;
   }
 
-  #plan .planlist .price-data {
+  #plan .plan-list .price-data {
     padding: 16px;
   }
 
-  #plan .planlist .price {
+  #plan .plan-list .price {
     margin-bottom: 12px;
     font-size: 36px;
   }
