@@ -414,7 +414,7 @@ section {
 
 #news-event .list-link a::after {
   content: ">";
-  padding-left: 8px;
+  margin-left: 8px;
 }
 
 #plan {
@@ -452,8 +452,20 @@ section {
   padding: 0;
 }
 
+#plan .plan-list .item {
+  height: 100%;
+}
+
+#plan .plan-list .item:first-of-type {
+  padding-right: 20px;
+}
+
 #plan .plan-list .item:nth-child(2) {
   border: 5px solid #442607;
+}
+
+#plan .plan-list .item:last-of-type {
+  padding-left: 20px;
 }
 
 #plan .plan-list .plan-title {
@@ -462,7 +474,6 @@ section {
   font-size: 20px;
   font-weight: 700;
   line-height: 60px;
-  margin-bottom: 0;
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
