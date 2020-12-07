@@ -743,6 +743,11 @@ section {
     display: block;
   }
 
+  #plan .plan-list .item:first-of-type,
+  #plan .plan-list .item:last-of-type {
+    padding: 0;
+  }
+
   #plan .plan-list .plan-title {
     font-size: 16px;
     line-height: 45px;
