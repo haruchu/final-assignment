@@ -192,7 +192,7 @@ section {
   color: #fff;
   font-size: 48px;
   writing-mode: vertical-rl;
-  line-height: 1.3;
+  line-height: 70px;
   font-weight: 500;
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
@@ -236,7 +236,7 @@ section {
 #cafe-info .text p,
 #plan .text p {
   font-size: 14px;
-  line-height: 2.6;
+  line-height: 40px;
 }
 
 #cafe-info .images {
@@ -290,14 +290,12 @@ section {
 
 #cafe-desc .text p {
   font-size: 14px;
-  line-height: 2.4;
+  line-height: 40px;
   margin-bottom: 32px;
 }
 
-#cafe-desc .text button,
-#plan button {
-  padding: 0;
-  border: 0;
+#cafe-desc .card:last-of-type .text p {
+  margin-bottom: 72px;
 }
 
 #news-event {
@@ -390,7 +388,7 @@ section {
   padding-bottom: 8px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 30px;
 }
 
 .event article .text .date {
@@ -429,27 +427,16 @@ section {
   color: #442506;
   font-size: 36px;
   margin-bottom: 12px;
-  line-height: 1.5;
+  line-height: 50px;
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
-
-#plan .desc {
-  margin-bottom: 50px;
-  font-size: 14px;
-  line-height: 2.4;
 }
 
 #plan .plan-list {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
-}
-
-#plan .col-md-4,
-#plan .col-12 {
-  padding: 0;
 }
 
 #plan .plan-list .item {
@@ -486,10 +473,11 @@ section {
 #plan .plan-list .price-data {
   padding: 24px;
   background: #ece9e6;
-  line-height: 1;
+  line-height: 24px;
   border: 1px solid #ddd;
-  font-size: 14px;
   border-top: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 #plan .plan-list .price {
@@ -502,6 +490,11 @@ section {
 #plan .plan-list .price::before {
   content: "￥";
   font-size: 20px;
+}
+
+#plan .plan-list .price-data::after {
+  content: "月額";
+  font-size: 16px;
 }
 
 #plan .plan-list .data {
@@ -654,7 +647,7 @@ section {
 
   #top .desc p,
   #cafe-info .text p {
-    line-height: 2;
+    line-height: 30px;
   }
 
   #cafe-info .images img {
@@ -675,7 +668,7 @@ section {
 
   #cafe-desc .text p {
     margin-bottom: 16px;
-    line-height: 2;
+    line-height: 30px;
   }
 
   #news-event .news-title,
@@ -703,9 +696,10 @@ section {
     font-size: 10px;
   }
 
-  .news article .title {
+  .news article .title,
+  .event article .text .title {
     font-size: 14px;
-    line-height: 1.8;
+    line-height: 28px;
   }
 
   .event article img {
@@ -718,8 +712,6 @@ section {
 
   .event article .text .title {
     margin-bottom: 6px;
-    font-size: 14px;
-    line-height: 1.8;
   }
 
   .event article .text .date {
@@ -732,11 +724,6 @@ section {
 
   #plan .title {
     font-size: 20px;
-  }
-
-  #plan .desc {
-    margin-bottom: 32px;
-    line-height: 2;
   }
 
   #plan .plan-list {
