@@ -314,11 +314,6 @@ section {
   margin: 0;
 }
 
-.news,
-.event {
-  margin-bottom: 32px;
-}
-
 #news-event .news-title,
 #news-event .event-title {
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
@@ -600,13 +595,6 @@ section {
   }
 }
 
-@media (max-width: 960px) {
-  .news,
-  .event {
-    margin-bottom: 36px;
-  }
-}
-
 @media (max-width: 767px) {
   header > .navbar {
     padding: 0 0 0 20px;
@@ -631,6 +619,7 @@ section {
 
   #top .title span {
     font-size: 24px;
+    line-height: 40px;
   }
 
   #top .desc,
@@ -753,5 +742,6 @@ section {
 @media (max-width: 500px) {
   #top .title span {
     font-size: 16px;
+    line-height: 24px;
   }
 }
