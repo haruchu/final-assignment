@@ -504,6 +504,77 @@ section {
 
 /* ----->footer */
 
+#footer-menu {
+  background-image: url(./img/footer-menu-img.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+#footer-menu::before {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+#footer-menu .menu-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#footer-menu .menu-title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 36px;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+#footer-menu .menu-desc {
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+#footer-menu .menu-list {
+  display: flex;
+}
+
+#footer-menu .list-item {
+  position: relative;
+  width: 400px;
+}
+
+#footer-menu .list-item a {
+  display: block;
+}
+
+#footer-menu .list-title {
+  color: #442602;
+  position: absolute;
+  right: 0;
+  width: 170px;
+  background: #fff;
+  line-height: 120px;
+}
+
+#footer-menu .list-title::before {
+  position: absolute;
+  left: -120px;
+  border-top: 120px solid transparent;
+  border-right: 60px solid #fff;
+  border-left: 60px solid transparent;
+  content: "";
+}
+
 /* <-----footer */
 
 @media (max-width: 1199px) {
@@ -592,6 +663,16 @@ section {
   #top .desc,
   #cafe-desc .text {
     padding: 40px 28px;
+  }
+
+  #footer-menu .menu-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 991px) {
+  #footer-menu .menu-list {
+    display: block;
   }
 }
 
@@ -737,11 +818,19 @@ section {
     margin-bottom: 12px;
     font-size: 36px;
   }
+
+  #footer-menu .menu-title {
+    font-size: 20px;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 470px) {
   #top .title span {
     font-size: 16px;
-    line-height: 24px;
+  }
+
+  #footer-menu .menu-list,
+  #footer-menu .list-item {
+    width: 100%;
   }
 }
