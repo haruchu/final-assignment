@@ -546,6 +546,7 @@ section {
 
 #footer-menu .menu-list {
   display: flex;
+  justify-content: center;
 }
 
 #footer-menu .list-item {
@@ -560,6 +561,7 @@ section {
 #footer-menu .list-title {
   color: #442602;
   position: absolute;
+  top: 0;
   right: 0;
   width: 170px;
   background: #fff;
@@ -822,6 +824,11 @@ section {
   #footer-menu .menu-title {
     font-size: 20px;
   }
+
+  #footer-menu .list-inner {
+    width: 400px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 470px) {
@@ -830,7 +837,8 @@ section {
   }
 
   #footer-menu .menu-list,
-  #footer-menu .list-item {
+  #footer-menu .list-item,
+  #footer-menu .list-inner {
     width: 100%;
   }
 }
