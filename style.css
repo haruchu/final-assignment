@@ -44,16 +44,16 @@ li {
   background-color: #442602;
 }
 
-.hover-action-parent {
+.hide-extra-img {
   margin: 0 auto;
   overflow: hidden;
 }
 
-.hover-action-child {
+.zoom-img {
   transition: all 0.5s;
 }
 
-.hover-action-child:hover {
+.zoom-img:hover {
   transform: scale(1.2, 1.2);
 }
 
@@ -500,18 +500,13 @@ section {
   font-weight: 500;
 }
 
-/* <-----main */
-
-/* ----->footer */
-
-#footer-menu {
-  background-image: url(./img/footer-menu-img.jpg);
+#cafe-place {
   position: relative;
-  background-position: center;
-  background-size: cover;
+  text-align: center;
+  background: center/cover url(./img/cafe-place-img.jpg);
 }
 
-#footer-menu::before {
+#cafe-place::before {
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
@@ -519,17 +514,15 @@ section {
   width: 100%;
   height: 100%;
   content: "";
+  z-index: 1;
 }
 
-#footer-menu .menu-inner {
+#cafe-place .inner {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  z-index: 1;
 }
 
-#footer-menu .menu-title {
+#cafe-place .place-title {
   margin-bottom: 20px;
   color: #fff;
   font-size: 36px;
@@ -538,27 +531,27 @@ section {
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
-#footer-menu .menu-desc {
+#cafe-place .place-desc {
   color: #fff;
   font-size: 14px;
   line-height: 30px;
 }
 
-#footer-menu .menu-list {
+#cafe-place .place-link {
   display: flex;
   justify-content: center;
 }
 
-#footer-menu .list-item {
+#cafe-place .link-item {
   position: relative;
   width: 400px;
 }
 
-#footer-menu .list-item a {
+#cafe-place .link-item a {
   display: block;
 }
 
-#footer-menu .list-title {
+#cafe-place .link-title {
   color: #442602;
   position: absolute;
   top: 0;
@@ -568,7 +561,7 @@ section {
   line-height: 120px;
 }
 
-#footer-menu .list-title::before {
+#cafe-place .link-title::before {
   position: absolute;
   left: -120px;
   border-top: 120px solid transparent;
@@ -576,6 +569,10 @@ section {
   border-left: 60px solid transparent;
   content: "";
 }
+
+/* <-----main */
+
+/* ----->footer */
 
 /* <-----footer */
 
@@ -667,13 +664,13 @@ section {
     padding: 40px 28px;
   }
 
-  #footer-menu .menu-title {
+  #cafe-place .place-title {
     font-size: 28px;
   }
 }
 
 @media (max-width: 991px) {
-  #footer-menu .menu-list {
+  #cafe-place .place-link {
     display: block;
   }
 }
@@ -821,11 +818,11 @@ section {
     font-size: 36px;
   }
 
-  #footer-menu .menu-title {
+  #cafe-place .place-title {
     font-size: 20px;
   }
 
-  #footer-menu .list-inner {
+  #cafe-place .inner {
     width: 400px;
     margin: 0 auto;
   }
@@ -836,9 +833,9 @@ section {
     font-size: 16px;
   }
 
-  #footer-menu .menu-list,
-  #footer-menu .list-item,
-  #footer-menu .list-inner {
+  #cafe-place .inner,
+  #cafe-place .place-link,
+  #cafe-place .link-item {
     width: 100%;
   }
 }
