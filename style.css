@@ -563,11 +563,19 @@ section {
 
 #cafe-place .link-title::before {
   position: absolute;
-  left: -120px;
+  right: 170px;
   border-top: 120px solid transparent;
   border-right: 60px solid #fff;
   border-left: 60px solid transparent;
   content: "";
+}
+
+#cafe-place .link-item img {
+  transition: all 0.5s;
+}
+
+#cafe-place .link-item:hover img {
+  transform: scale(1.2, 1.2);
 }
 
 /* <-----main */
