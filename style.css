@@ -44,13 +44,25 @@ li {
   background-color: #442602;
 }
 
+.title-text {
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-size: 36px;
+}
+
+.desc-text {
+  font-size: 14px;
+  line-height: 30px;
+}
+
 .hide-extra-img {
   margin: 0 auto;
   overflow: hidden;
 }
 
 .zoom-img {
-  transition: all 0.5s;
+  transition: 0.5s;
 }
 
 .zoom-img:hover {
@@ -194,9 +206,6 @@ section {
   writing-mode: vertical-rl;
   line-height: 70px;
   font-weight: 500;
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
 #top .desc,
@@ -230,13 +239,6 @@ section {
   font-family: serif;
   font-size: 36px;
   padding-bottom: 16px;
-}
-
-#top .desc p,
-#cafe-info .text p,
-#plan .text p {
-  font-size: 14px;
-  line-height: 40px;
 }
 
 #cafe-info .images {
@@ -289,8 +291,6 @@ section {
 }
 
 #cafe-desc .text p {
-  font-size: 14px;
-  line-height: 40px;
   margin-bottom: 32px;
 }
 
@@ -316,9 +316,6 @@ section {
 
 #news-event .news-title,
 #news-event .event-title {
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
   font-weight: 500;
   display: flex;
   margin-bottom: 36px;
@@ -333,6 +330,7 @@ section {
 #news-event .news-title div,
 #news-event .event-title div {
   margin-left: 16px;
+  font-size: 16px;
 }
 
 .news article {
@@ -381,9 +379,7 @@ section {
 
 .event article .text .title {
   padding-bottom: 8px;
-  font-size: 16px;
   font-weight: 400;
-  line-height: 30px;
 }
 
 .event article .text .date {
@@ -420,12 +416,8 @@ section {
 
 #plan .title {
   color: #442506;
-  font-size: 36px;
   margin-bottom: 12px;
   line-height: 50px;
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
 #plan .plan-list {
@@ -525,16 +517,10 @@ section {
 #cafe-place .place-title {
   margin-bottom: 20px;
   color: #fff;
-  font-size: 36px;
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
 #cafe-place .place-desc {
   color: #fff;
-  font-size: 14px;
-  line-height: 30px;
 }
 
 #cafe-place .place-link {
@@ -543,12 +529,12 @@ section {
 }
 
 #cafe-place .link-item {
-  position: relative;
   width: 400px;
 }
 
 #cafe-place .link-item a {
   display: block;
+  position: relative;
 }
 
 #cafe-place .link-title {
@@ -571,7 +557,7 @@ section {
 }
 
 #cafe-place .link-item img {
-  transition: all 0.5s;
+  transition: 0.5s;
 }
 
 #cafe-place .link-item:hover img {
@@ -677,12 +663,6 @@ section {
   }
 }
 
-@media (max-width: 991px) {
-  #cafe-place .place-link {
-    display: block;
-  }
-}
-
 @media (max-width: 767px) {
   header > .navbar {
     padding: 0 0 0 20px;
@@ -720,11 +700,6 @@ section {
   #cafe-info .text h2 {
     font-size: 20px;
     padding-bottom: 8px;
-  }
-
-  #top .desc p,
-  #cafe-info .text p {
-    line-height: 30px;
   }
 
   #cafe-info .images img {
@@ -845,6 +820,10 @@ section {
   #cafe-place .place-link,
   #cafe-place .link-item {
     width: 100%;
+  }
+
+  #cafe-place .place-link {
+    display: block;
   }
 
   #cafe-place .link-item:hover img {
