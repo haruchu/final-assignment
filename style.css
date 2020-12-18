@@ -748,8 +748,7 @@ section {
     font-size: 10px;
   }
 
-  .news article .title,
-  .event article .text .title {
+  .news article .title {
     font-size: 14px;
     line-height: 28px;
   }
