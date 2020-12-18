@@ -846,4 +846,8 @@ section {
   #cafe-place .link-item {
     width: 100%;
   }
+
+  #cafe-place .link-item:hover img {
+    transform: none;
+  }
 }
