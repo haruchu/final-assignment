@@ -568,7 +568,6 @@ section {
 
 /* ----->footer */
 
-
 #footer-info .info-inner {
   text-align: center;
 }
@@ -602,13 +601,16 @@ section {
   color: #000;
 }
 
+#footer-info .info-menu li a:hover {
+  color: #442602;
+}
+
 #footer-info .copy-right {
   background-color: #000;
   color: #fff;
   font-size: 12px;
   text-align: center;
 }
-
 
 /* <-----footer */
 
@@ -892,5 +894,4 @@ section {
   #footer-info .copy-right{
     font-size: 8px;
   }
-
 }
