@@ -428,6 +428,7 @@ section {
 
 #plan .plan-list .item {
   height: 100%;
+  margin-bottom: 24px;
 }
 
 #plan .plan-list .item:first-of-type {
@@ -436,6 +437,7 @@ section {
 
 #plan .plan-list .item:nth-child(2) {
   border: 5px solid #442607;
+  padding: 0;
 }
 
 #plan .plan-list .item:last-of-type {
@@ -496,6 +498,7 @@ section {
   position: relative;
   text-align: center;
   background: center/cover url(./img/cafe-place-img.jpg);
+  padding: 48px 20px;
 }
 
 #cafe-place::before {
@@ -526,6 +529,7 @@ section {
 #cafe-place .place-link {
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 
 #cafe-place .link-item {
@@ -568,28 +572,29 @@ section {
 
 /* ----->footer */
 
-footer .info-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 footer .info-logo {
   width: 150px;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 footer .info-logo img {
   width: 100%;
 }
 
-footer .sns-nav {
+footer .footer-address {
   text-align: center;
 }
 
+footer .sns-nav {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
 footer .sns-nav-item {
-  display: inline;
-  margin-right: 12px;
+  margin-right: 16px;
   font-size: 14px;
 }
 
@@ -609,9 +614,11 @@ footer .sns-nav-item a:hover {
 
 footer .info-menu {
   display: flex;
+  flex-wrap: wrap;
   background: #f5f5f5;
   justify-content: center;
   font-size: 14px;
+  margin: 0;
 }
 
 footer .info-menu li,
@@ -634,6 +641,7 @@ footer .copy-right {
   color: #fff;
   font-size: 12px;
   text-align: center;
+  margin: 0;
 }
 
 /* <-----footer */
@@ -879,10 +887,6 @@ footer .copy-right {
 
   footer .info-logo {
     width: 110px;
-  }
-
-  footer .info-menu {
-    flex-wrap: wrap;
   }
 
   footer .info-menu li + li::before {
